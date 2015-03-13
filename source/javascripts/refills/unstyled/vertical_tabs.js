@@ -21,12 +21,12 @@ $(".js-vertical-tab-accordion-heading").click(function(event) {
   event.preventDefault();
 
   $(".js-vertical-tab-content").hide();
-  var accordion_activeTab = $(this).attr("rel");
-  $("#"+accordion_activeTab).show();
+  var accordionActiveTab = $(this).attr("rel");
+  $("#"+accordionActiveTab).show();
 
   $(".js-vertical-tab-accordion-heading").removeClass("is-active");
   $(this).addClass("is-active");
 
   $(".js-vertical-tab").removeClass("is-active");
-  $(".js-vertical-tab[rel^='"+accordion_activeTab+"']").addClass("is-active");
+  $(".js-vertical-tab[rel^='"+accordionActiveTab+"']").addClass("is-active");
 });
