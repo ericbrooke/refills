@@ -17,9 +17,10 @@
     @include position(absolute, 0 0 0 null);
     padding: 5px 10px;
 
-    img {
-      height: 12px;
-      opacity: 0.7;
-    }
+  }
+  
+  img {
+    height: 12px;
+    opacity: 0.7;
   }
 }
