@@ -3,8 +3,8 @@
   $large-screen: em(860) !default;
 
   label {
-    font-weight: normal;
     cursor: pointer;
+    font-weight: normal;
     margin-bottom: 0;
   }
 
@@ -14,8 +14,8 @@
 
   .modal-fade-screen { // overlay
     @include transition(opacity 0.25s ease);
-    @include position(fixed, 0px 0px 0px 0px);
-    background: rgba(0,0,0, 0.85);
+    @include position(fixed, 0 0 0 0);
+    background: rgba(0, 0, 0, 0.85);
     opacity: 0;
     visibility: hidden;
     z-index: 99999;
@@ -23,11 +23,11 @@
     @include media($large-screen) {
       padding-top: 10em;
     }
+  }
 
-    .modal-bg {
-      @include position(absolute, 0px 0px 0px 0px);
-      cursor: pointer;
-    }
+  .modal-bg {
+    @include position(absolute, 0 0 0 0);
+    cursor: pointer;
   }
 
   .modal-close {
@@ -56,10 +56,10 @@
   .modal-state:checked + .modal-fade-screen {
     opacity: 1;
     visibility: visible;
-
+  }
+  
   .modal-inner {
-      top: 0.5em;
-    }
+    top: 0.5em;
   }
 }
 
